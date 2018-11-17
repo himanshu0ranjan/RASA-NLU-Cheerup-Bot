@@ -5,7 +5,7 @@ The bot will ask you how you’re doing, and send a picture to try and cheer you
 This comes with a small amount of training data which lets you build a simple assistant. 
 
 <p align="center">
-  <img src="./logo.png">
+  <img src="./logo.PNG">
 </p>
 
 
