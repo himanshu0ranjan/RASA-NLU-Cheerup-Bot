@@ -1,0 +1,1349 @@
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001393228EB00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1107, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1152, in _send_request
+    self.endheaders(body)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1103, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001393228EB00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001393228EB00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 311, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\utils.py", line 665, in request
+    **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 524, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 637, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001393228EB00>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 323, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001393231ACC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1107, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1152, in _send_request
+    self.endheaders(body)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1103, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001393231ACC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001393231ACC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 311, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\utils.py", line 665, in request
+    **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 524, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 637, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001393231ACC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 323, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001393232A940>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1107, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1152, in _send_request
+    self.endheaders(body)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1103, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001393232A940>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001393232A940>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 311, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\utils.py", line 665, in request
+    **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 524, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 637, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001393232A940>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 323, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Failed to run custom action 'action_joke'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013932328518>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+Failed to execute custom action.
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\connection.py", line 80, in create_connection
+    raise err
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\connection.py", line 70, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 354, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1107, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1152, in _send_request
+    self.endheaders(body)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 1103, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 181, in connect
+    conn = self._new_conn()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000013932328518>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013932328518>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 311, in run
+    json=json, method="post", timeout=DEFAULT_REQUEST_TIMEOUT)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\utils.py", line 665, in request
+    **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 524, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 637, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5055): Max retries exceeded with url: /webhook (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000013932328518>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 323, in run
+    raise Exception("Failed to execute custom action.")
+Exception: Failed to execute custom action.
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'is_echo': True, 'app_id': 1411489528984250, 'seq': 14331, 'text': 'Hey there! Tell me your name.', 'mid': 'K3qrAqY1DBqkDv1zxlKxI8Fj_5f2M3NKD_Qzor60TCEDUZVw5WBAy_dXhIhf4XOMe6bFsIkxbgYAZ9bW257-QQ'}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541949298847, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you tony. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'is_echo': True, 'app_id': 1411489528984250, 'seq': 14334, 'text': 'Nice to you meet you tony. How can I help?', 'mid': 'Xq9_ELEYR60_D4BjK-A7L8Fj_5f2M3NKD_Qzor60TCGmTiHuH_tcAeyrB3zicStc8VPrnrF7vcmXTXln4v1S1A'}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541949308378, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+The model predicted the custom action 'action_joke' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://rasa.com/docs/core/customactions/
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 305, in run
+    "".format(self.name(), DOCS_BASE_URL))
+Exception: The model predicted the custom action 'action_joke' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://rasa.com/docs/core/customactions/
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'is_echo': True, 'app_id': 1411489528984250, 'seq': 14339, 'text': 'Hey there! Tell me your name.', 'mid': 'CRKCw2dw7PMwcRW7WeR5usFj_5f2M3NKD_Qzor60TCHfvAYXEfChoQp1tknanFRuFEmUaIsDFrKRdy2ApBaZjw'}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541949350859, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you josh. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'is_echo': True, 'app_id': 1411489528984250, 'seq': 14343, 'text': 'Nice to you meet you josh. How can I help?', 'mid': 'aFSQJ6UpFJIVG9wnu0Kj0cFj_5f2M3NKD_Qzor60TCG-fsqyuALdHz-EM_fkhd-qYGZOLt3BzG5DSE1sHpeiBQ'}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541949362017, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Encountered an exception while running action 'action_joke'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+The model predicted the custom action 'action_joke' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://rasa.com/docs/core/customactions/
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 305, in run
+    "".format(self.name(), DOCS_BASE_URL))
+Exception: The model predicted the custom action 'action_joke' but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration. https://rasa.com/docs/core/customactions/
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14351, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'cvz19u8K-xZc76ikRwCdRMFj_5f2M3NKD_Qzor60TCERhoqDjwIPDmqcJ7HvSM2lU3xD5-KDUC0nu1M83Ngaqw'}, 'timestamp': 1541949544724, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you tony. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14355, 'app_id': 1411489528984250, 'text': 'Nice to you meet you tony. How can I help?', 'is_echo': True, 'mid': 'CpoPH3Ryt9gDqhF-3wW1ZMFj_5f2M3NKD_Qzor60TCGCaX9Lr9g4xTCwoNojTL0uqZXFUoS7XuANA1xX00rfyA'}, 'timestamp': 1541949552031, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Staring at Chuck Norris for extended periods of time without proper eye protection will cause blindess, and possibly foot sized brusies on the face.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14359, 'app_id': 1411489528984250, 'text': 'Staring at Chuck Norris for extended periods of time without proper eye protection will cause blindess, and possibly foot sized brusies on the face.', 'is_echo': True, 'mid': 'V4ltn6_Duy91QayDWLl_a8Fj_5f2M3NKD_Qzor60TCFc4_ArnF3juAJE30Grp1_kP8YCAc4fE6e6Wvh-mPXJxA'}, 'timestamp': 1541949564846, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Chuck Norris ordered a Big Mac at Burger King, and got one.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14363, 'app_id': 1411489528984250, 'text': 'Chuck Norris ordered a Big Mac at Burger King, and got one.', 'is_echo': True, 'mid': 'DITSC9EMoiovNGBfIPgHZMFj_5f2M3NKD_Qzor60TCFZGyFCqCH4IXU4B0gbJQ-FcvmRmQ6CQ_dQuYcgRTH2HA'}, 'timestamp': 1541949582025, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14366, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'yS8QD2w9lweaUoRmIZVvosFj_5f2M3NKD_Qzor60TCFGqo17KImwYZ_wTj7ZLVPg2Y2W37i3CzFRUcRc5RKNqQ'}, 'timestamp': 1541949596236, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you josh. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14370, 'app_id': 1411489528984250, 'text': 'Nice to you meet you josh. How can I help?', 'is_echo': True, 'mid': 'lQFD4m-G9kADxeo9DGsGE8Fj_5f2M3NKD_Qzor60TCGe5rX5m11zWgXNpxnthBUEDSnbFLTyxc7yPNV6QrBiEQ'}, 'timestamp': 1541949602412, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14374, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'z8zWZzHlkPT2sYZHOByJRsFj_5f2M3NKD_Qzor60TCGHZ8cCs3OV0P6W7xP1uwd7SrZTKXhusItqdTDm434YWg'}, 'timestamp': 1541949608532, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you josh. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14378, 'app_id': 1411489528984250, 'text': 'Nice to you meet you josh. How can I help?', 'is_echo': True, 'mid': 'l3RWKzLKtdLV9DSUDQeKC8Fj_5f2M3NKD_Qzor60TCG0simnfiacZRE5VK_a_XbwDQvy_8ZXz1INjHSg1GHovw'}, 'timestamp': 1541949616959, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Talk to you later!
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14383, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'CYBuI4WxkW_n2ejC2VZPx8Fj_5f2M3NKD_Qzor60TCFw6piIOwXzJ9O7KGNGJcR-nG2vKb_YJmmcsx0o2vDuNg'}, 'timestamp': 1541949721952, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14385, 'app_id': 1411489528984250, 'text': 'Talk to you later!', 'is_echo': True, 'mid': 'IOOXvBN1Drvzz3iOC4ClzcFj_5f2M3NKD_Qzor60TCF8T_ZAabFtH4LqFxf2VNOLxEtRosUkpabHRoQebiNXAg'}, 'timestamp': 1541949725164, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14386, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'LiXDrwionI8ifpxv3D4nmcFj_5f2M3NKD_Qzor60TCHSZw4aDkfkSprwjv_VwJn2g5R_YVVPEURDubzq3J996w'}, 'timestamp': 1541949727859, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14390, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'qemN6B53PyQnqhffO-JNYsFj_5f2M3NKD_Qzor60TCHX253tubfnDJbs4qv_Wzz_eZ8PtMF4mwh1H_FHPNPvWQ'}, 'timestamp': 1541949797103, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you tony. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14393, 'app_id': 1411489528984250, 'text': 'Nice to you meet you tony. How can I help?', 'is_echo': True, 'mid': 'yZZhrzKB17zsrMCGJjxAEsFj_5f2M3NKD_Qzor60TCG-VI_gScVxMSpf0wD2M7kgnjJK8dFUUQZI43sCSGhwgg'}, 'timestamp': 1541949806104, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: MacGyver can build an airplane out of gum and paper clips, but Chuck Norris can roundhouse-kick his head through a wall and take it.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14396, 'app_id': 1411489528984250, 'text': 'MacGyver can build an airplane out of gum and paper clips, but Chuck Norris can roundhouse-kick his head through a wall and take it.', 'is_echo': True, 'mid': 'yIkFeJd3sBIK4TqxhcXMS8Fj_5f2M3NKD_Qzor60TCF78ZGiz6xVydnt5jAah768cVtq0zRoTGwu6Lny6wrw5Q'}, 'timestamp': 1541949819359, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Chuck Norris qualified with a top speed of 324 mph at the Daytona 500, without a car.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14400, 'app_id': 1411489528984250, 'text': 'Chuck Norris qualified with a top speed of 324 mph at the Daytona 500, without a car.', 'is_echo': True, 'mid': '3P12chg4zJYal7dE8xVNvsFj_5f2M3NKD_Qzor60TCH4jUUWUVCOZWqG3FENpzXu4Vh-hp7LAtGixMio-3ZhDQ'}, 'timestamp': 1541949836516, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14403, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'Li0A-ZCQhohRvp1jxFv_cMFj_5f2M3NKD_Qzor60TCFYXexeviKjypIAHBGz9K794SBUdKHGbAWDFGWEtyHGuw'}, 'timestamp': 1541949906736, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14408, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'ikHCdVL7a2wBfNhzXDsyb8Fj_5f2M3NKD_Qzor60TCHHS60_47kYrGdxBvl1ZxsEhtwub5K3pXB2O3svC8rtEw'}, 'timestamp': 1541950485050, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you tony. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14412, 'app_id': 1411489528984250, 'text': 'Nice to you meet you tony. How can I help?', 'is_echo': True, 'mid': '_Cp7SXRfEVFlNLc9u_kcocFj_5f2M3NKD_Qzor60TCGY4cXQUAjCUkpFo2G4rak-bz2dPF8AnM_p_yZGhALzaA'}, 'timestamp': 1541950499631, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14416, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'NR29gM1__mkldtmT1W5lK8Fj_5f2M3NKD_Qzor60TCFvoGILbwHtp01BDUI0PZi4MBet_Tq06H8Y0_r_uwpzgA'}, 'timestamp': 1541950515654, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you josh. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14420, 'app_id': 1411489528984250, 'text': 'Nice to you meet you josh. How can I help?', 'is_echo': True, 'mid': 'A_pG35wxE4jMgXOjoH2gPMFj_5f2M3NKD_Qzor60TCG_QvUcGC3OeHU3CiCxK0avccf9PvCYCsyBU7y6G_UxGQ'}, 'timestamp': 1541950525689, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Chuck Norris eats beef jerky and craps gunpowder. Then, he uses that gunpowder to make a bullet, which he uses to kill a cow and make more beef jerky. Some people refer to this as the &quot;Circle of Life.&quot;
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14424, 'app_id': 1411489528984250, 'text': 'Chuck Norris eats beef jerky and craps gunpowder. Then, he uses that gunpowder to make a bullet, which he uses to kill a cow and make more beef jerky. Some people refer to this as the &quot;Circle of Life.&quot;', 'is_echo': True, 'mid': 'ytiA3VmNM1G9kNFavYC-HsFj_5f2M3NKD_Qzor60TCGBhFyen8awR8D94QfBpytQvXC66B8WU2YTzAxrliF4CA'}, 'timestamp': 1541950537926, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14428, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': '1pcpKL2VwS-7wLUWD7pgE8Fj_5f2M3NKD_Qzor60TCH5WROIJCCX0OXC7vNXFUkxLUEBEPEQjLekLzlEGh-wMg'}, 'timestamp': 1541952586334, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you josh. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14432, 'app_id': 1411489528984250, 'text': 'Nice to you meet you josh. How can I help?', 'is_echo': True, 'mid': 'smCre64jPnN9GimRS-DOwcFj_5f2M3NKD_Qzor60TCGwDNckbqSuOs67990fyzNFFP_ll34DbwJYpzZ3mo8IOA'}, 'timestamp': 1541952595369, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Chuck Norris's keyboard doesn't have a Ctrl key because nothing controls Chuck Norris.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14435, 'app_id': 1411489528984250, 'text': "Chuck Norris's keyboard doesn't have a Ctrl key because nothing controls Chuck Norris.", 'is_echo': True, 'mid': 'qriLIJGbjFT3p3nVDxV0BsFj_5f2M3NKD_Qzor60TCHYqi3qDHeTeL-HrfW-h_oTmQuAMN9_Rj9zh7mCkYKhtA'}, 'timestamp': 1541952614282, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Those aren't credits that roll after Walker Texas Ranger. It is actually a list of fatalities that occurred during the making of the episode.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14439, 'app_id': 1411489528984250, 'text': "Those aren't credits that roll after Walker Texas Ranger. It is actually a list of fatalities that occurred during the making of the episode.", 'is_echo': True, 'mid': 'M8IjDjspBzId4dD_AX-iysFj_5f2M3NKD_Qzor60TCEy43iYoLEVIhaC5yCW4K6yc2wJIJFoXhsBQesfSwUCvA'}, 'timestamp': 1541952632765, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: In ancient China there is a legend that one day a child will be born from a dragon, grow to be a man, and vanquish evil from the land. That man is not Chuck Norris, because Chuck Norris killed that man.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14443, 'app_id': 1411489528984250, 'text': 'In ancient China there is a legend that one day a child will be born from a dragon, grow to be a man, and vanquish evil from the land. That man is not Chuck Norris, because Chuck Norris killed that man.', 'is_echo': True, 'mid': 'L0x4500DTfL5j9dDr5I_O8Fj_5f2M3NKD_Qzor60TCHjnwko5UhsbEUNWEyqfdz5m15WytC7TtWKYichDBInsA'}, 'timestamp': 1541952651560, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Chuck Norris once shat blood - the blood of 11,940 natives he had killed and eaten.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14446, 'app_id': 1411489528984250, 'text': 'Chuck Norris once shat blood - the blood of 11,940 natives he had killed and eaten.', 'is_echo': True, 'mid': 'lYx_xqifbYtFOWy47ibBxMFj_5f2M3NKD_Qzor60TCEhbEaGgn0P0nR9uqR1frZgdFc0aIHS6UCMZVCsnmvLnQ'}, 'timestamp': 1541952681671, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14450, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'wms7T925wPJXZTV0JkVzEcFj_5f2M3NKD_Qzor60TCEegr4MZ2h9WqyUyrzu1mSlikOUhOab8_Ly85eI_tWbsA'}, 'timestamp': 1541952699348, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Talk to you later!
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14454, 'app_id': 1411489528984250, 'text': 'Talk to you later!', 'is_echo': True, 'mid': 'noaWMJrniwan8SZHXcRMXsFj_5f2M3NKD_Qzor60TCFCs5IQo2IM4SRekEt0rEateyRHf0n5J_Lle5cg2b788w'}, 'timestamp': 1541952705694, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14458, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'u4NcubVc2pETRNPzytmLMcFj_5f2M3NKD_Qzor60TCHpsp2m0XEj9U6jcBr-v6J1sC6sZKqq3wtvwi4_Ex1Jsw'}, 'timestamp': 1541952764446, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14462, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'ggojdMZyDftK0F677ZUUxMFj_5f2M3NKD_Qzor60TCGefpyqYgfeuYgVls8ODTikf_V3D5c4WUpODww5MZuICQ'}, 'timestamp': 1541952771547, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Nice to you meet you santy. How can I help?
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14466, 'app_id': 1411489528984250, 'text': 'Nice to you meet you santy. How can I help?', 'is_echo': True, 'mid': 'B3WCWauZPPhJZypTxXFrAsFj_5f2M3NKD_Qzor60TCEAia5OwRrmhStmSggUjtoYEj03n9O0Jys_0UFF_ZFKaQ'}, 'timestamp': 1541952783467, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Scientifically speaking, it is impossible to charge Chuck Norris with &quot;obstruction of justice.&quot; This is because even Chuck Norris cannot be in two places at the same time.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14470, 'app_id': 1411489528984250, 'text': 'Scientifically speaking, it is impossible to charge Chuck Norris with &quot;obstruction of justice.&quot; This is because even Chuck Norris cannot be in two places at the same time.', 'is_echo': True, 'mid': 'XibJLBwd44F_lcHsuOaSz8Fj_5f2M3NKD_Qzor60TCHnkfpdbCqOcwFBdhcjf-Vm7wf2lSInBmoWPuQur1aU2g'}, 'timestamp': 1541952803380, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Hey there! Tell me your name.
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14474, 'app_id': 1411489528984250, 'text': 'Hey there! Tell me your name.', 'is_echo': True, 'mid': 'bOzNU9DAszJodVzAM4U6E8Fj_5f2M3NKD_Qzor60TCG6qugUkCZDX1Dgb-lrIMdgnZ1_6jfNtCSh40NUUJ1Ltw'}, 'timestamp': 1541952813964, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\sklearn\preprocessing\label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Sending message: Talk to you later!
+Received a message from facebook that we can not handle. Message: {'message': {'seq': 14478, 'app_id': 1411489528984250, 'text': 'Talk to you later!', 'is_echo': True, 'mid': 'DFgxVWpX7DXbqYnA-wxuc8Fj_5f2M3NKD_Qzor60TCEcoA8XRQIezvGmhWSYnokLZpJUXHqHXHlhBjSb3gP4JQ'}, 'timestamp': 1541952819644, 'sender': {'id': '439646963149522'}, 'recipient': {'id': '1962857767101618'}}
+Exception on /webhooks/facebook/webhook [POST]
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 277, in webhook
+    messenger.handle(request.get_json(force=True))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 254, in handle
+    for message in entry['messaging']:
+KeyError: 'messaging'
+Rasa process starting
+Rasa process starting
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Restoring parameters from models/current/nlu\intent_classifier_tensorflow_embedding.ckpt
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Restoring parameters from models/current/nlu\intent_classifier_tensorflow_embedding.ckpt
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Restoring parameters from models/current/nlu\intent_classifier_tensorflow_embedding.ckpt
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Restoring parameters from models/current/nlu\intent_classifier_tensorflow_embedding.ckpt
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Restoring parameters from models/current/nlu\intent_classifier_tensorflow_embedding.ckpt
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Sending message: Hey! How are you?
+Sending message: Hey! How are you?
+Sending message: Hey! How are you?
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960622888, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'Usj0pGWZf2BufrtXSFC5csFj_5f2M3NKD_Qzor60TCHxBenfyElO7vfdYLpXtpX08VxgIfNvFgkgxc1Yu3m7iw', 'text': 'Hey! How are you?', 'seq': 14485}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960625236, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'mPm5yz7eHfB0fFRf5QWHUcFj_5f2M3NKD_Qzor60TCHLgi_kIInjHJEHk4aHBS52-FMm97caQkOfA3EP6zNSsA', 'text': 'Hey! How are you?', 'seq': 14488}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960627207, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'yACGVMaa437K_JMJmYluscFj_5f2M3NKD_Qzor60TCF-wVvPfPzER8lE6hnio15bwtV4kRstbDCME5gYxboF8A', 'text': 'Hey! How are you?', 'seq': 14490}, 'recipient': {'id': '1962857767101618'}}
+Sending message: Here is something to cheer you up:
+Sending message: Did that help you?
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960641903, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'QQJcnyK7F0crhENphwpxU8Fj_5f2M3NKD_Qzor60TCEYQwjj4SPBBlTfUUETJXGebcdC8H7lfufF4mpTqwTH2A', 'text': 'Here is something to cheer you up:', 'seq': 14494}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960643437, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'mb7808rEWQ6CoJ2Zz6l55sFj_5f2M3NKD_Qzor60TCGVKyUujMyRRWTQp-eIMsj7JEba6DVVZtQ1fj5-q4PQvw', 'attachments': [{'type': 'image', 'payload': {'url': 'https://scontent.xx.fbcdn.net/v/t1.15752-9/46022128_890679621323242_3566657111658070016_n.jpg?_nc_cat=100&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=734dcdc5a0f29c1f53156a40151996c9&oe=5C6B6EBD'}}], 'seq': 14496}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960644313, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': '_FHgrlVO6M9tGhEGLSXggsFj_5f2M3NKD_Qzor60TCHWbNRY8VdOxhllWWcF2m1STaepIlJAajm3MkY689VXeA', 'text': 'Did that help you?', 'seq': 14497}, 'recipient': {'id': '1962857767101618'}}
+Sending message: Bye
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960651993, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'vnzq07ubM4uwV3m7RoZT5sFj_5f2M3NKD_Qzor60TCGVXXBZMNWtOoWzWeJhkpFZLe4AvzPevh3Mu9kpZs22jQ', 'text': 'Bye', 'seq': 14502}, 'recipient': {'id': '1962857767101618'}}
+Sending message: Hey! How are you?
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960665803, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'EUJ4SoTh2yyfAdOOJamhhMFj_5f2M3NKD_Qzor60TCGI8xXZuqX2a9aw3bbznAQUSSYKm5Vb_s_ydOugxTGaiw', 'text': 'Hey! How are you?', 'seq': 14505}, 'recipient': {'id': '1962857767101618'}}
+Sending message: Great carry on!
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960677218, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'wPdnz99FhJgZ5ew_J9fPsMFj_5f2M3NKD_Qzor60TCH5jnBDXeLLQfE-WvC9mH2X2k-glT0apft7vdICwm0ABA', 'text': 'Great carry on!', 'seq': 14509}, 'recipient': {'id': '1962857767101618'}}
+Sending message: Hey! How are you?
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960689301, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'A4TefpwbC2JTkOnAkoTVWMFj_5f2M3NKD_Qzor60TCEsOqX7NXtLTutl99-4y0kjdYyyssITijeKx1o39rBjHw', 'text': 'Hey! How are you?', 'seq': 14512}, 'recipient': {'id': '1962857767101618'}}
+Sending message: Here is something to cheer you up:
+Sending message: Did that help you?
+Sending message: Hey! How are you?
+Sending message: Hey! How are you?
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960797937, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'uiOEObFVHWWB-DJ4lHzGSsFj_5f2M3NKD_Qzor60TCHW7OzTq36tE5R0ziivfLZy1Y7CFv9u72ym06ceclKJog', 'text': 'Here is something to cheer you up:', 'seq': 14518}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960799307, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': '3AUyeP4iDtgtzg_cCI-Tv8Fj_5f2M3NKD_Qzor60TCFsAKb9GYB9zuLNJ73ahuZiskvtGPVsPsznBrSe2-zzXw', 'attachments': [{'type': 'image', 'payload': {'url': 'https://scontent.xx.fbcdn.net/v/t1.15752-9/45636852_513816302459635_4967855089210359808_n.jpg?_nc_cat=103&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=3a6e710fd316e8348c75eecab25dba06&oe=5C72531B'}}], 'seq': 14520}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960799962, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'I8wM_cE1Ker5_tNq0pZAycFj_5f2M3NKD_Qzor60TCGbZ2xT6lIpgXvZYq87GVqlDfkx5p_-CZzMj44iUB_6NA', 'text': 'Did that help you?', 'seq': 14521}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960801933, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'SLjt1DntDJFJ5WkG1N5sccFj_5f2M3NKD_Qzor60TCGlMlfyOsLjR4zOCjub7ccu-V4orObnaw-P-8Ce19IEEA', 'text': 'Hey! How are you?', 'seq': 14525}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960803923, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'CShWe4qNmSr3Gd748bdq0cFj_5f2M3NKD_Qzor60TCEsnxleecb0-qD3oZ7Oxqb_8YGD45W4w4NOroKb3yQrdw', 'text': 'Hey! How are you?', 'seq': 14528}, 'recipient': {'id': '1962857767101618'}}
+Sending message: Here is something to cheer you up:
+Sending message: Did that help you?
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960843698, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'vOb5Nz4--cmCAtbiYeq6hcFj_5f2M3NKD_Qzor60TCFncl22Z9fUq5gHfYGdUuGwDvbYaUwK-zxKGLC2W7KKBA', 'text': 'Here is something to cheer you up:', 'seq': 14532}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960845389, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'aIYDBa1C23f5G6JGu_Ac_8Fj_5f2M3NKD_Qzor60TCGwfkPpPVL3m2qmrAewoE4NR6R39e8xK9KNa4fdUWyBug', 'attachments': [{'type': 'image', 'payload': {'url': 'https://scontent.xx.fbcdn.net/v/t1.15752-9/45965128_500882986987120_5298263173785190400_n.jpg?_nc_cat=111&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=2f0f1d9adf107b8a54d2541a4bddd569&oe=5C82FEDF'}}], 'seq': 14534}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541960846173, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'app_id': 1411489528984250, 'mid': 'RzmLzw6-4XfrDqIRbE45_cFj_5f2M3NKD_Qzor60TCHMlP6-rhOUQLAwa1FwIGhr5stkBa-1nSMDm3YTK596vQ', 'text': 'Did that help you?', 'seq': 14535}, 'recipient': {'id': '1962857767101618'}}
+Received a message from facebook that we can not handle. Message: {'timestamp': 1541961197960, 'sender': {'id': '439646963149522'}, 'message': {'is_echo': True, 'mid': 'KRC-Rk0xETOU9a7yWqWawsFj_5f2M3NKD_Qzor60TCHZs_senNBs5CDsJb3arMT66e6ln9F28BNltT5dw2LXqQ', 'text': 'Yes', 'seq': 14540}, 'recipient': {'id': '1962857767101618'}}
+Sending message: Hey! How are you?
+Encountered an exception while running action 'utter_greet'. Bot will continue, but the actions events are lost. Make sure to fix the exception in your custom code.
+HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.11/me/messages?access_token=EAAUDvgP6sroBADgrIjypupbhvKQzZCLqWI5BifyDMM5HLCaE8G3BBL3ITSEjw2dtewwrYE9u13AD7VDRPFGUcNyyIAJMklgXFEcvkiazAa7obKn5ZBSWWs89g7mbmnIIyCIBUf2HHU8AIX6ClkWj9iMLbjWd7ZBvYoiNHwvcQZDZD (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:719)'),))
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connection.py", line 344, in connect
+    ssl_context=context)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\ssl.py", line 385, in wrap_socket
+    _context=self)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\ssl.py", line 760, in __init__
+    self.do_handshake()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\ssl.py", line 996, in do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\ssl.py", line 641, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:719)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.11/me/messages?access_token=EAAUDvgP6sroBADgrIjypupbhvKQzZCLqWI5BifyDMM5HLCaE8G3BBL3ITSEjw2dtewwrYE9u13AD7VDRPFGUcNyyIAJMklgXFEcvkiazAa7obKn5ZBSWWs89g7mbmnIIyCIBUf2HHU8AIX6ClkWj9iMLbjWd7ZBvYoiNHwvcQZDZD (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:719)'),))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\processor.py", line 338, in _run_action
+    events = action.run(dispatcher, tracker, self.domain)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\actions\action.py", line 140, in run
+    tracker)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\dispatcher.py", line 146, in utter_template
+    self.utter_response(message)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\dispatcher.py", line 62, in utter_response
+    self.output_channel.send_response(self.sender_id, message)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\channel.py", line 133, in send_response
+    message.get("text"))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 143, in send_text_message
+    self.send(recipient_id, FBText(text=message_part))
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_core\channels\facebook.py", line 134, in send
+    'RESPONSE')
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\fbmessenger\__init__.py", line 75, in send
+    timeout=timeout
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 572, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 524, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\sessions.py", line 637, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v2.11/me/messages?access_token=EAAUDvgP6sroBADgrIjypupbhvKQzZCLqWI5BifyDMM5HLCaE8G3BBL3ITSEjw2dtewwrYE9u13AD7VDRPFGUcNyyIAJMklgXFEcvkiazAa7obKn5ZBSWWs89g7mbmnIIyCIBUf2HHU8AIX6ClkWj9iMLbjWd7ZBvYoiNHwvcQZDZD (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:719)'),))
+Rasa process starting
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Pool size changed, may indicate binary incompatibility. Expected 48 from C header, got 64 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\importlib\_bootstrap.py:222: RuntimeWarning: cymem.cymem.Address size changed, may indicate binary incompatibility. Expected 24 from C header, got 40 from PyObject
+  return f(*args, **kwds)
+
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\rasa_nlu\extractors\entity_synonyms.py:85: UserWarning: Failed to load synonyms file from 'models/current/nlu\entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Restoring parameters from models/current/nlu\intent_classifier_tensorflow_embedding.ckpt
+C:\Users\himanshu.ranjan\AppData\Local\Continuum\anaconda3\envs\venvpy35\lib\site-packages\pykwalify\core.py:99: UnsafeLoaderWarning: 
+The default 'Loader' for 'load(stream)' without further arguments can be unsafe.
+Use 'load(stream, Loader=ruamel.yaml.Loader)' explicitly if that is OK.
+Alternatively include the following in your code:
+
+  import warnings
+  warnings.simplefilter('ignore', ruamel.yaml.error.UnsafeLoaderWarning)
+
+In most other cases you should consider using 'safe_load(stream)'
+  data = yaml.load(stream)
+
+Rasa Core server is up and running on http://localhost:5005
+Sending message: Hey! How are you?
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14547, 'mid': 'LSuJEQXtIwNO_-I0wLaA78Fj_5f2M3NKD_Qzor60TCFTsimdt2RXzNEFs-7GfWdtt78235J0pBFo4PXodLNopw', 'text': 'Hey! How are you?', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961454581}
+Sending message: Here is something to cheer you up:
+Sending message: Did that help you?
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14550, 'mid': 'UCSfHWdZPiLexiNQG8K6e8Fj_5f2M3NKD_Qzor60TCGWOR_H1BEEBre06UeS0OMwMYinBzAIOSKvJH5lgJ6GiQ', 'text': 'Here is something to cheer you up:', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961461695}
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'attachments': [{'type': 'image', 'payload': {'url': 'https://scontent.xx.fbcdn.net/v/t1.15752-9/45797998_2208269549425769_7064455207387660288_n.jpg?_nc_cat=103&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=a4f831d7710ec3438b399d627638e6df&oe=5C78A544'}}], 'seq': 14552, 'mid': 'BsW-JX03b7jO3j7X6OboNcFj_5f2M3NKD_Qzor60TCGuZmnt1gQynyfboNTq2afAIOsFGMFa_arywJ1W9kx__g', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961463585}
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14553, 'mid': '-pPDeohfxsQZt9Ejhy7LG8Fj_5f2M3NKD_Qzor60TCF-OVLZ415E0lXp4aM23xH1cj2QpKiFas_ewXdQTu6Ezg', 'text': 'Did that help you?', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961464255}
+Sending message: Great carry on!
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14558, 'mid': '_yfFf173oqE4GcJFV-STj8Fj_5f2M3NKD_Qzor60TCGF9_LB9RzWLp1oEwEnM7NqHnz5pliaL1fGfsmTds9SYA', 'text': 'Great carry on!', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961476546}
+Sending message: Bye
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14562, 'mid': 'u2BUnyLq7lPLKSBlP5DLEMFj_5f2M3NKD_Qzor60TCETwmT0IcQTioV-UgLurCBmda_WJvi2kqKVXSsWtTa0sQ', 'text': 'Bye', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961489653}
+Sending message: Hey! How are you?
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14566, 'mid': 'k7Ri_uQb2NnYiS1UMGonmMFj_5f2M3NKD_Qzor60TCHBc_BV9iiwYWvDnxUhfLRlcJSzrOqNdjzmJqsFqJUGgQ', 'text': 'Hey! How are you?', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961495124}
+Sending message: Great carry on!
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14570, 'mid': 'CdG_-HQhsp8k1lQQ2chweMFj_5f2M3NKD_Qzor60TCGkrBWboMN31KBIKaUbK0vA6qDMKnrKWsx6ew1qfQyVPQ', 'text': 'Great carry on!', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961501299}
+Sending message: Hey! How are you?
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14574, 'mid': 'Xh1flNeoeaY5CVqdfUcHh8Fj_5f2M3NKD_Qzor60TCGwadQs4CgO_GJLKEm66OxXboj_Bed8zciYTI5vW3jSgw', 'text': 'Hey! How are you?', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961529163}
+Sending message: Great carry on!
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14578, 'mid': 'bl4o0MlWZ0IcBgbir5ML2MFj_5f2M3NKD_Qzor60TCE9qstduqUe58L7yhQrQNv34A8QlBcIEy8D9A6e3kBcGQ', 'text': 'Great carry on!', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961537985}
+Sending message: Bye
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14582, 'mid': 'JtP4OWPfZjqHnODHLC1jLcFj_5f2M3NKD_Qzor60TCEbaPVO7OMI2TXZbg8nDLfKFOaLi3hVxeml3o_TPxKCMQ', 'text': 'Bye', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961556488}
+Sending message: Bye
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14586, 'mid': 'ElpAlixGJ5N-Iqmg9qW8iMFj_5f2M3NKD_Qzor60TCHl3sYkOUdmfLT1lRoD7m8hrYbgPd7a3IwxZHGUdP69ww', 'text': 'Bye', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541961562049}
+Sending message: Hey! How are you?
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14589, 'mid': '62V-4yew57-bzDj7FEYid8Fj_5f2M3NKD_Qzor60TCHqsxIqX6i_Qzx54MDA-6vOAtghYbYsFegcFNyjevadqQ', 'text': 'Hey! How are you?', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541963684030}
+Sending message: Great carry on!
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14593, 'mid': 'hm_PWAEdx7Lf4s8nIZDT58Fj_5f2M3NKD_Qzor60TCG8bBLqQkRe842tYKkk9MwCe5j1-g-9k-i6-QWD-TXF0w', 'text': 'Great carry on!', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541963697797}
+Sending message: Hey! How are you?
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14597, 'mid': 'ZmWWCB3Sa6nID7j9kGK77cFj_5f2M3NKD_Qzor60TCFdMj_OxO8ER1ezdKO7Thq2G4vbuNHJ92Sxj8JHdWKOGg', 'text': 'Hey! How are you?', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541963709465}
+Sending message: Here is something to cheer you up:
+Sending message: Did that help you?
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14600, 'mid': '17cye15RBncl6CfsIdJKO8Fj_5f2M3NKD_Qzor60TCFT9s06oBi1PLt7vRnWSqFPNv_zGjoBe8uOlbWmh1lidw', 'text': 'Here is something to cheer you up:', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541963720365}
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'attachments': [{'type': 'image', 'payload': {'url': 'https://scontent.xx.fbcdn.net/v/t1.15752-9/46019301_2002336853220269_187553370616102912_n.jpg?_nc_cat=100&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=24205dca6c657471a610b1ef60b40340&oe=5C7C44FC'}}], 'seq': 14602, 'mid': 'fKiyyQy_hwzC8RcKmNNjYsFj_5f2M3NKD_Qzor60TCHoTpN9Cx_vgvt9N_U7rTevgPRb9hMBdhM8xV8aVgHFKw', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541963723125}
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14603, 'mid': 'Uf-jFVDWs4I4T5KWTwEEjcFj_5f2M3NKD_Qzor60TCHrbFnV-SvBenwoBBSTlF1IuoGxL0Co-qMAIEn8IvZskg', 'text': 'Did that help you?', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541963724238}
+Sending message: Great carry on!
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14607, 'mid': 'AkIE2yYsg0VBiFWW1mHEjcFj_5f2M3NKD_Qzor60TCG-V2OMsKuK1cHHUv-IHWhfe1Y0v5yUvXnPLKyffhQjVw', 'text': 'Great carry on!', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541963735586}
+Sending message: Bye
+Received a message from facebook that we can not handle. Message: {'recipient': {'id': '1962857767101618'}, 'message': {'is_echo': True, 'seq': 14611, 'mid': 'UMZxhzlUrM841mNXLpvODcFj_5f2M3NKD_Qzor60TCEIL9VXpm02ODNqpENakf0SOQzSxXe8gc-rfwTqR4vwgg', 'text': 'Bye', 'app_id': 1411489528984250}, 'sender': {'id': '439646963149522'}, 'timestamp': 1541963744951}

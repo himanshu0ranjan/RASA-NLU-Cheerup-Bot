@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\himanshu.ranjan\\Desktop\\PythonProjects\\RASA_NLU\\rasa-cheerup-bot\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "C:\\Users\\himanshu.ranjan\\Desktop\\PythonProjects\\RASA_NLU\\rasa-cheerup-bot\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
